@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+
+    <div class = "wrapper">
+        <header>
+            <nav class = "navbar">
+                <div class = "brand">
+                    <h2>Lengua <span style="color: azure;">y</span><span> Literatura</span></h2>
+                </div>
+                <ul class = "menu">
+                    <li><a href = "http://127.0.0.1:5000/"; class = "active">Inicio</a></li>
+                    <li><a href = "http://127.0.0.1:5000/trabajos">Trabajos</a></li>
+                    <li><a href = "http://127.0.0.1:5000/info">Info</a></li>
+                    <li><a href = "http://127.0.0.1:5000/contacto">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}
+        {% endblock %}
+</body>
+
+</html>
+
